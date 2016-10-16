@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="25.0px" android:minHeight="25.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center"
+    android:background="#3f9dd9">
+    <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView" android:src="@drawable/splash" android:layout_gravity="center"
+            android:scaleType="centerInside"/>
+</LinearLayout>

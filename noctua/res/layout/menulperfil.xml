@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:foo="http://schemas.android.com/apk/res-auto"
+              android:background="@android:color/transparent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center" android:id="@+id/llLayout"
+            android:background="@android:color/transparent">
+        <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:id="@+id/iv_icon" android:layout_gravity="center_horizontal"
+            android:background="@drawable/bckperfil" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/bckperfil" />
+
+        <com.syp4.noctua.ui.NoctuaTextView android:textSize="17.0sp" android:textColor="#fefefe" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginRight="10dip"
+                                           foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                                                  android:ellipsize="end" android:singleLine="false"
+                                                  android:layout_marginLeft="10dip" android:text="Elemento"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</LinearLayout>

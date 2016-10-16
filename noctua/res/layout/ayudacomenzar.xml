@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/ayuda5_imagenprincipal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/androidphone" />
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gracias por su tiempo, ahora puede comenzar la aplicación."
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+            android:textSize="19sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+
+        <com.syp4.noctua.ui.NoctuaButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Comenzar"
+            android:id="@+id/comenzarapp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnbackgroundwhite"
+            android:textColor="#3f9dd9"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf"/>
+    </LinearLayout>
+
+</FrameLayout>

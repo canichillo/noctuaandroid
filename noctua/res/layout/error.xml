@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minWidth="120dp"
+              xmlns:foo="http://schemas.android.com/apk/res-auto" android:background="@drawable/dialogo">
+    <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/titulo" android:layout_gravity="center_horizontal" android:textColor="#3f9dd9"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf" android:textAlignment="center"
+            android:gravity="center_horizontal" android:layout_marginTop="15dp" android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" android:textSize="17sp"/>
+    <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/mensaje" android:textAlignment="center" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf" android:gravity="center_horizontal"
+            android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:textSize="17sp"
+        android:textColor="#79848E" />
+    <com.syp4.noctua.ui.NoctuaButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/aceptar"
+            android:id="@+id/aceptar" android:layout_gravity="bottom" android:layout_weight="1"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf"
+            android:textColor="#ffffff"
+            android:layout_marginTop="15dp" android:background="@drawable/botonazulcompleto" android:textSize="17sp"/>
+</LinearLayout>

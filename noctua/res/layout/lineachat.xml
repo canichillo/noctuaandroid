@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineachat_texto"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        foo:customFont="Fonts/HelveticaNeueLight.ttf"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/chatpropio"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_fechamensaje"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lineachat_dia"
+            android:layout_marginLeft="5dp"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf"
+            android:textSize="15sp"
+            android:gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:textColor="#6f7881"/>
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lineachat_hora"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+            android:textSize="15sp"
+            android:gravity="center_vertical|left"
+            android:textColor="#6f7881"
+            android:layout_weight="1" />
+        </LinearLayout>
+</FrameLayout>

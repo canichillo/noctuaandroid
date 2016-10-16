@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/stars" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:foo="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView android:id="@+id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:textSize="14.0sp" android:textColor="#ffffff"
+            android:layout_gravity="center" android:id="@+id/txtTerminos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Almeria de Noche" foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+    </ScrollView>
+</LinearLayout>

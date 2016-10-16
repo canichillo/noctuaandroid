@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f9dd9">
+<android.support.v4.view.ViewPager
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/pagerayuda" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag1"
+            android:src="@drawable/viewpagerselected" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag2"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag3"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag4"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag5"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag6"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag7"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag8"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgpag9"
+            android:src="@drawable/viewpagerunselected"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+</FrameLayout>

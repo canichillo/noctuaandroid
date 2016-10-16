@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a Noctúa"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ayuda1_logo"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durante el transcurso de este tutorial le guiaremos a través de la aplicación Noctúa y de su funcionalidad."
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+            android:textSize="19sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</FrameLayout>

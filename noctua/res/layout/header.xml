@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="42dp" xmlns:foo="http://schemas.android.com/apk/res-auto"
+              android:focusableInTouchMode="false" android:id="@+id/llHeader">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/llCabecera"
+        android:background="#3f9dd9">
+        <ImageView
+                android:layout_width="28dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imgtituloi"
+            android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" />
+        <com.syp4.noctua.ui.NoctuaTextView android:textSize="22sp" android:textColor="#ffffff"
+                                           android:gravity="center" android:layout_gravity="center"
+                                           android:id="@+id/txtTitulo" android:layout_width="fill_parent"
+                                           android:layout_height="fill_parent"
+                                           android:text="Titulo"
+                                           foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                                           android:layout_marginRight="35dp"
+            android:singleLine="true" />
+        <ImageView
+                android:layout_width="28dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imgtitulod"
+            android:layout_marginBottom="7dp"
+                android:layout_marginLeft="-42dp" android:layout_marginTop="7dp" android:scaleType="fitXY"
+                android:layout_marginRight="7dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp" android:background="#30000000"
+        android:id="@+id/llsombra"></LinearLayout>
+</LinearLayout>

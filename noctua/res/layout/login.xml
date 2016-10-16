@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/stars" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:foo="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView android:id="@+id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:measureWithLargestChild="false"
+            android:paddingBottom="20dp">
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido a Noctua"
+                android:id="@+id/textView1"
+                foo:customFont="Fonts/HelveticaNeueLight.ttf" android:textColor="#ffffff" android:textSize="28sp"
+                android:textAlignment="center" android:layout_gravity="center" android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:id="@+id/imagenlogo"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY" />
+
+            <com.syp4.noctua.ui.NoctuaText
+                android:textSize="16.0sp" android:textColor="#3f9dd9" android:id="@+id/txtUsuario"
+                                                   android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="30.0dip"
+                                                   android:layout_marginRight="30.0dip" android:singleLine="true"
+                                                   foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                                                   android:paddingLeft="10dip" android:gravity="center_vertical|left"
+                                                   android:inputType="text"
+                                                   android:background="@drawable/tfbackground"
+                                                   android:layout_marginTop="15dp" android:paddingRight="10dp"/>
+            <com.syp4.noctua.ui.NoctuaText
+                android:textSize="16.0sp" android:textColor="#3f9dd9" android:id="@+id/txtContrasenya" android:background="@drawable/tfbackground"
+                                                   android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:singleLine="true" android:drawablePadding="5.0dip" android:inputType="text|textPassword" foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                                                   android:paddingLeft="10dp" android:gravity="center_vertical|left"
+                                                   android:paddingTop="10dp" android:layout_marginTop="7dp"/>
+            <com.syp4.noctua.ui.NoctuaButton
+                android:textSize="22.0sp" android:textColor="#39aad6" android:id="@+id/acceder" android:background="@drawable/btnbackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45dp" android:layout_marginLeft="30.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="30.0dip" android:text="@string/access" foo:customFont="Fonts/HelveticaNeueMedium.ttf"
+                                                     android:gravity="center"/>
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notaccount"
+                android:id="@+id/textonotaccount"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                foo:customFont="Fonts/HelveticaNeueMedium.ttf"/>
+
+            <com.syp4.noctua.ui.NoctuaButton
+                android:textSize="21.0sp" android:textColor="#3f9dd9" android:id="@+id/registrar" android:background="@drawable/btnbackgroundwhite" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45dp" android:layout_marginLeft="70.0dip"
+                android:layout_marginRight="70.0dip" android:text="@string/register" foo:customFont="Fonts/HelveticaNeueMedium.ttf"
+                                                    android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp" />
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCEDER CON"
+                android:id="@+id/textoacceder"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                foo:customFont="Fonts/HelveticaNeueMedium.ttf"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.syp4.noctua.ui.NoctuaButton
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/facebook"
+                    android:background="@drawable/facebook"
+                    android:textColor="#ffffff"
+                    foo:customFont="Fonts/HelveticaNeueMedium.ttf"
+                    android:layout_gravity="center"
+                    android:gravity="center|center_vertical"
+                    android:layout_marginRight="10dp" />
+                <com.syp4.noctua.ui.NoctuaButton
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/twitter"
+                    android:background="@drawable/twitter"
+                    android:textColor="#ffffff"
+                    foo:customFont="Fonts/HelveticaNeueMedium.ttf"
+                    android:layout_gravity="center"
+                    android:gravity="center|center_vertical"
+                    android:layout_marginRight="10dp" />
+                <com.syp4.noctua.ui.NoctuaButton
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/google"
+                    android:background="@drawable/google"
+                    android:textColor="#ffffff"
+                    foo:customFont="Fonts/HelveticaNeueMedium.ttf"
+                    android:layout_gravity="center"
+                    android:gravity="center|center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

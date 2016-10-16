@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/marcoazulblanco"
+    android:descendantFocusability="blocksDescendants">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imagenseguidor"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="29dp"
+            android:id="@+id/imagensoseguidor"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/android" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="33dp"
+            android:layout_gravity="center_vertical">
+
+        <com.syp4.noctua.ui.NoctuaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombreseguidor"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:singleLine="true"
+            android:textColor="#3f9dd9" />
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dispositivoseguidor"
+                foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                android:singleLine="true" />
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amigoseguidor"
+                foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                android:textSize="15sp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:background="#403f9dd9">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seguidor_chat"
+                    android:src="@drawable/chat"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seguidor_amigo"
+                    android:src="@drawable/meeting"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

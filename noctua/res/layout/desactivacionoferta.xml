@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logobackground"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/desactivacion_layoutdatos"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/desactivacion_nombreoferta"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:textColor="#3f9dd9"
+                android:textSize="16sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/desactivacion_imagenempresa"
+                android:layout_gravity="center_vertical|left"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical">
+
+                    <com.syp4.noctua.ui.NoctuaTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:id="@+id/desactivacion_diaoferta"
+                        foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                        android:textColor="#3f9dd9"
+                        android:textSize="23sp"
+                        android:gravity="bottom"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:id="@+id/imageView"
+                            android:src="@drawable/clock" />
+
+                        <com.syp4.noctua.ui.NoctuaTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/horas"
+                            android:gravity="bottom|left"
+                            foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                            android:textSize="22sp"
+                            android:textColor="#3f9dd9"
+                            android:singleLine="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#3f9dd9"
+            android:layout_marginTop="7dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <com.syp4.noctua.ui.NoctuaTextView
+                    android:id="@+id/desactivacion_seleccionados1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="No ha seleccionado nada"
+                    android:textAlignment="center"
+                    android:textColor="#3f9dd9"
+                    android:textSize="17sp"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:layout_gravity="center_vertical" />
+
+                <com.syp4.noctua.ui.NoctuaTextView
+                    android:id="@+id/desactivacion_seleccionadosnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="#3f9dd9"
+                    android:textSize="26sp"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+
+                <com.syp4.noctua.ui.NoctuaTextView
+                    android:id="@+id/desactivacion_seleccionados2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="#3f9dd9"
+                    android:textSize="17sp"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/espaciogrid" />
+
+                <GridView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridEliminacion"
+                    android:choiceMode="singleChoice"
+                    android:verticalSpacing="5dp"
+                    android:horizontalSpacing="5dp"
+                    android:minHeight="60dp"
+                    android:minWidth="60dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:smoothScrollbar="true"
+                    android:scrollingCache="false"
+                    android:stretchMode="none"
+                    android:columnWidth="60dp"
+                    android:numColumns="auto_fit" />
+
+            </LinearLayout>
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/desactivacion_textodisponibles"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                android:layout_marginRight="10dp"
+                android:textSize="17sp"
+                android:textColor="#3f9dd9"
+                android:layout_marginTop="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#3f9dd9"
+                android:layout_marginTop="7dp"></LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal">
+
+                <com.syp4.noctua.ui.NoctuaTextView
+                    android:id="@+id/top_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Código desactivación:"
+                    android:textAlignment="center"
+                    android:textColor="#3f9dd9"
+                    android:textSize="18sp"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:layout_gravity="center_vertical" />
+
+                <com.syp4.noctua.ui.NoctuaTextView android:id="@+id/pincode" android:layout_height="wrap_content" android:layout_width="wrap_content"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:gravity="right"
+                    android:textColor="#3f9dd9"
+                    android:textSize="38sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TableRow android:layout_marginBottom="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent">
+                    <com.syp4.noctua.ui.NoctuaButton
+                        android:id="@+id/button1"
+                        android:layout_height="fill_parent" android:layout_width="fill_parent"
+                        android:text="1"
+                        android:background="@drawable/btnbackground"
+                        android:textColor="#ffffffff" foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                        android:layout_marginRight="5dp"
+                        android:textSize="22sp" />
+                    <com.syp4.noctua.ui.NoctuaButton
+                        android:id="@+id/button2"
+                        android:layout_height="fill_parent" android:layout_width="fill_parent"
+                        android:text="2" android:background="@drawable/btnbackground" foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"/>
+                    <com.syp4.noctua.ui.NoctuaButton
+                        android:id="@+id/button3"
+                        android:layout_height="fill_parent" android:layout_width="fill_parent"
+                        android:text="3" android:background="@drawable/btnbackground" foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1">
+                    <com.syp4.noctua.ui.NoctuaButton
+                        android:id="@+id/button4"
+                        android:layout_height="fill_parent" android:layout_width="fill_parent"
+                        android:text="4" android:background="@drawable/btnbackground" foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"/>
+
+                    <com.syp4.noctua.ui.NoctuaButton
+                        android:id="@+id/button5"
+                        android:layout_height="fill_parent" android:layout_width="fill_parent"
+                        android:text="5" android:background="@drawable/btnbackground" foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"/>
+
+                    <com.syp4.noctua.ui.NoctuaButton
+                        android:id="@+id/button_erase"
+                        android:layout_height="fill_parent" android:layout_width="fill_parent"
+                        android:text="Supr" android:background="@drawable/btnbackground" foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Cargando datos de la oferta..."
+        android:id="@+id/desactivacion_cargando"
+        android:layout_gravity="center"
+        android:textColor="#3f9dd9"
+        android:textSize="23sp"
+        foo:customFont="Fonts/HelveticaNeueBold.ttf"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="visible" />
+    </LinearLayout>

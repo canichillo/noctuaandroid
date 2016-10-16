@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logobackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:id="@+id/llCategorias"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:background="#3f9dd9"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.syp4.noctua.ui.NoctuaButton
+            android:id="@+id/favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/botonblancoizquierda"
+            android:text="Seguidas"
+            android:textColor="#3f9dd9"
+            android:textSize="16sp"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+        <com.syp4.noctua.ui.NoctuaButton
+            android:id="@+id/activas"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/botonazulbordeblanco"
+            android:text="Activas"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+        <com.syp4.noctua.ui.NoctuaButton
+            android:id="@+id/todas"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/botonazulbordeblanco"
+            android:text="Todas"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+        <com.syp4.noctua.ui.NoctuaButton
+            android:id="@+id/cercami"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/botonazulderecha"
+            android:text="Cercanas"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llsombra"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="36dp"
+        android:background="#30000000"></LinearLayout>
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="38dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@null" />
+
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:id="@+id/textovacio"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="No hay ofertas activas"
+        android:textColor="#3f9dd9"
+        android:textSize="25sp"
+        android:visibility="gone"
+        foo:customFont="Fonts/HelveticaNeueBold.ttf" />
+
+    <LinearLayout
+        android:id="@+id/llOpciones"
+        android:layout_width="fill_parent"
+        android:layout_height="73dp"
+        android:layout_gravity="bottom"
+        android:background="#e53f9dd9"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:fillViewport="false"
+            android:measureAllChildren="false"
+            android:paddingBottom="2dp"
+            android:paddingTop="3dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="54dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:clickable="true">
+
+                    <Button
+                        android:id="@+id/mapa"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/btnmapa" />
+
+                    <com.syp4.noctua.ui.NoctuaTextView
+                        android:id="@+id/nombremapa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mapa"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="-69dp"
+                        android:id="@+id/llBotonMapa"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="54dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/noctuas"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/btnnoctuas"
+                        android:gravity="center_horizontal" />
+
+                    <com.syp4.noctua.ui.NoctuaTextView
+                        android:id="@+id/nombrenoctuas"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="Noctuas"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="-69dp"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/llBotonNoctuas"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="54dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bares"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/btnbares"
+                        android:gravity="center_horizontal" />
+
+                    <com.syp4.noctua.ui.NoctuaTextView
+                        android:id="@+id/nombrebares"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="Bares"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/llBotonBares"
+                        android:layout_marginTop="-69dp"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="54dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/pubs"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/btnpubs"
+                        android:gravity="center_horizontal" />
+
+                    <com.syp4.noctua.ui.NoctuaTextView
+                        android:id="@+id/nombrepubs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="Pubs"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="-69dp"
+                        android:id="@+id/llBotonPubs"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="54dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/comidas"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/btncomida"
+                        android:gravity="center_horizontal" />
+
+                    <com.syp4.noctua.ui.NoctuaTextView
+                        android:id="@+id/nombrecomida"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="Comida"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/llBotonRestaurantes"
+                        android:layout_marginTop="-69dp"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="54dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/eventos"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/btneventos"
+                        android:gravity="center_horizontal" />
+
+                    <com.syp4.noctua.ui.NoctuaTextView
+                        android:id="@+id/nombreeventos"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="Eventos"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        foo:customFont="Fonts/HelveticaNeueLight.ttf" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="-69dp"
+                        android:id="@+id/llBotonEventos"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</FrameLayout>

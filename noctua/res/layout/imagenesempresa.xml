@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+    <com.syp4.noctua.ui.NoctuaTextView android:textSize="22sp" android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/txtTitulo" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        foo:customFont="Fonts/HelveticaNeueLight.ttf"
+        android:singleLine="true" />
+    <View android:layout_width="fill_parent" android:layout_height="2dp" android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+    <com.example.touch.TouchImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imagengrandeempresa"
+        android:scaleType="center"
+        android:layout_marginBottom="35dp"
+        android:src="@android:color/transparent" />
+    <com.syp4.noctua.ui.NoctuaTextView android:textSize="15sp" android:textColor="#ffffff"
+        android:gravity="center_horizontal|bottom"
+        android:id="@+id/txtDescripcion" android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:text=""
+        foo:customFont="Fonts/HelveticaNeueLight.ttf"
+        android:singleLine="false"
+        android:layout_marginTop="-80dp"
+        android:ellipsize="marquee"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="bottom" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="orden"
+        android:id="@+id/orden"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        foo:customFont="Fonts/HelveticaNeueLight.ttf"
+        android:textSize="18sp" />
+
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección"
+        android:id="@+id/direccion"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7dp"
+        foo:customFont="Fonts/HelveticaNeueLight.ttf"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp" />
+</LinearLayout>

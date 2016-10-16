@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#3f9dd9"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="5dp">
+
+        <com.syp4.noctua.ui.NoctuaButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Ruta"
+            android:id="@+id/ruta"
+            android:layout_weight="1"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf"
+            android:textColor="#3f9dd9"
+            android:textSize="18sp"
+            android:background="@drawable/botonblancoizquierda" />
+
+        <com.syp4.noctua.ui.NoctuaButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Indicaciones"
+            android:id="@+id/indicaciones"
+            android:layout_weight="1"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:background="@drawable/botonazulderecha" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#26000000"></LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapamellevas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listaindicaciones"
+        android:visibility="gone" />
+</LinearLayout>

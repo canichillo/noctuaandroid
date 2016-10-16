@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logobackground"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listachat"
+        android:dividerHeight="10dp" android:divider="@null"
+        android:scrollbars="none"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#e0f7f7f7"
+        android:minHeight="30dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#b3b7bc"></LinearLayout>
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent">
+
+            <com.syp4.noctua.ui.NoctuaText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/chat_textomensaje"
+                android:background="@drawable/textochat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="17sp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:maxHeight="87dp"
+                android:padding="5dp"
+                android:textColor="#989ea4"
+                android:inputType="none"
+                android:minHeight="30dp" />
+
+            <com.syp4.noctua.ui.NoctuaButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/enviar"
+                android:id="@+id/chat_botonenviar"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="#989ea4"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:singleLine="false" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

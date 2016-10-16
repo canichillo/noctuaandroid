@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:paddingTop="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/panel">
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Estamos en"
+                android:id="@+id/textView1"
+                android:textColor="#ffffff"
+                android:background="#3f9dd9"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"/>
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/direccionempresa"
+                foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/panel"
+            android:layout_marginTop="10dp">
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:id="@+id/ubicacionoferta"
+                android:textColor="#ffffff"
+                android:background="#3f9dd9"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"/>
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descripcionempresa"
+                foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

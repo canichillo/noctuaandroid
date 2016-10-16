@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logobackground"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/oferta_layoutdatos"
+        android:visibility="gone">
+
+        <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:id="@+id/oferta_imagenoferta"
+                    android:background="#ffffffff"
+                    android:scaleType="fitXY"
+                    />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="-25dp"
+            android:background="#e03f9dd9">
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="fill_parent"
+                android:layout_height="26dp"
+                android:id="@+id/oferta_nombreempresa"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="100dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_marginTop="-3dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:id="@+id/oferta_imagenempresa"
+            android:layout_gravity="center_vertical|left|top"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-69dp" />
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/oferta_nombreoferta"
+            android:textColor="#3f9dd9"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="5dp"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf"
+            android:text="Información"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="-25dp" />
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/oferta_diaoferta"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+            android:textColor="#3f9dd9"
+            android:textSize="22sp"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/clock" />
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horas"
+                android:gravity="bottom|left"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:textSize="22sp"
+                android:textColor="#3f9dd9"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp" android:background="#3f9dd9"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"></LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollview">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="55dp">
+
+                <com.syp4.noctua.ui.NoctuaTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descripcionoferta"
+                    foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#3f9dd9"
+                    android:textSize="16sp" />
+
+                <com.syp4.noctua.ui.NoctuaButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Me llevas?"
+                    android:id="@+id/oferta_mellevas"
+                    android:background="@drawable/botonazul"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#d03f9dd9"
+            android:gravity="bottom"
+            android:layout_gravity="center_vertical|bottom"
+            android:layout_marginTop="-50dp">
+
+            <com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/oferta_textoadquisicion"
+                android:layout_gravity="center_vertical|left"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10dp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:layout_marginRight="160dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff" />
+
+            <com.syp4.noctua.ui.NoctuaButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/btoadquisicion"
+                android:background="@drawable/btnbackgroundblueborderwhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:padding="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="15sp"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Cargando datos de la oferta..."
+        android:id="@+id/oferta_cargando"
+        android:layout_gravity="center"
+        android:textColor="#3f9dd9"
+        android:textSize="23sp"
+        foo:customFont="Fonts/HelveticaNeueBold.ttf"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="visible" />
+
+</LinearLayout>

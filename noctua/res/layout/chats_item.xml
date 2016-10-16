@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="#fafafa">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/chat_imagen"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="29dp"
+            android:id="@+id/chat_imagenso"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/android" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical">
+
+        <com.syp4.noctua.ui.NoctuaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chat_nombre"
+                    foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                    android:singleLine="true"
+            android:textColor="#3f9dd9" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.syp4.noctua.ui.NoctuaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chat_dispositivo"
+                    foo:customFont="Fonts/HelveticaNeueLight.ttf"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/adelante"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"></LinearLayout>
+</LinearLayout>

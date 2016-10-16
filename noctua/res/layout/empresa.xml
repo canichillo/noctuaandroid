@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logobackground"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/empresa_layoutdatos"
+        android:visibility="gone"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/empresa_imagenempresa"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp" />
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/empresa_nombreempresa"
+            foo:customFont="Fonts/HelveticaNeueBold.ttf"
+            android:textColor="#3f9dd9"
+            android:textSize="20sp"
+            android:layout_marginTop="103dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp" android:background="#3f9dd9"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="130dp"></LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:fillViewport="true"
+            android:measureAllChildren="true"
+            android:layout_marginTop="131dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:measureWithLargestChild="false"
+                android:paddingBottom="55dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_imgwifi"
+                            android:src="@drawable/www"
+                            android:layout_gravity="center_vertical" />
+                        <com.syp4.noctua.ui.NoctuaTextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_webempresa"
+                            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                            android:textColor="#3f9dd9"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_imgtelefono"
+                            android:src="@drawable/phone"
+                            android:layout_gravity="center_vertical" />
+                        <com.syp4.noctua.ui.NoctuaTextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_telefonoempresa"
+                            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                            android:textColor="#3f9dd9"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_imgmail"
+                            android:src="@drawable/mail"
+                            android:layout_gravity="center_vertical" />
+                        <com.syp4.noctua.ui.NoctuaTextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_mailempresa"
+                            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                            android:textColor="#3f9dd9"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_imgfacebook"
+                            android:src="@drawable/facebookemp"
+                            android:layout_gravity="center_vertical" />
+                        <com.syp4.noctua.ui.NoctuaTextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_facebookempresa"
+                            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                            android:textColor="#3f9dd9"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_imgtwitter"
+                            android:src="@drawable/twitteremp"
+                            android:layout_gravity="center_vertical" />
+                        <com.syp4.noctua.ui.NoctuaTextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_twitterempresa"
+                            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                            android:textColor="#3f9dd9"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp" android:background="#3f9dd9"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="3dp"></LinearLayout>
+
+                <com.syp4.noctua.ui.NoctuaTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/empresa_descripcionempresa"
+                    foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                    android:textColor="#3f9dd9"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <FrameLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/panel"
+                    android:layout_marginTop="10dp">
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/mapaempresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        class="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp" />
+
+                    <FrameLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="150dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btnbackgroundwhite"
+                        android:layout_marginRight="60dp"
+                        android:id="@+id/empresa_mellevas"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_imgcoche"
+                            android:src="@drawable/address"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="2dp" />
+
+                        <com.syp4.noctua.ui.NoctuaTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/empresa_direccionempresa"
+                                foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                                android:textColor="#3f9dd9"
+                                android:textSize="15sp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:singleLine="true" />
+                        <com.syp4.noctua.ui.NoctuaTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/empresa_poblacionempresa"
+                            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+                            android:textColor="#3f9dd9"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="3dp"
+                            android:singleLine="true"
+                            android:layout_marginTop="20dp" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/panel"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:measureWithLargestChild="false"
+                    android:id="@+id/llImagenesEmpresa"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:id="@+id/empresa_imagengaleria"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/empresa_atrasgaleria"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ccffffff"
+                        android:src="@drawable/atras" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/empresa_adelantegaleria"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ccffffff"
+                        android:src="@drawable/adelante"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#d03f9dd9"
+            android:gravity="bottom"
+            android:layout_gravity="center_vertical|bottom"
+            android:layout_marginTop="-50dp">
+
+            <com.syp4.noctua.ui.NoctuaButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/empresa_btoseguidores"
+                        android:background="@drawable/btnbackgroundblueborderwhite"
+                        android:layout_marginLeft="5dp"
+                        foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:visibility="invisible"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/amigos"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp" />
+
+            <com.syp4.noctua.ui.NoctuaButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/empresa_seguirempresa"
+                android:background="@drawable/btnbackgroundblueborderwhite"
+                android:layout_marginRight="5dp"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical|right"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/estrella"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Cargando datos de la empresa..."
+        android:id="@+id/empresa_cargando"
+        android:layout_gravity="center"
+        android:textColor="#3f9dd9"
+        android:textSize="23sp"
+        foo:customFont="Fonts/HelveticaNeueBold.ttf"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="visible" />
+</LinearLayout>

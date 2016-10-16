@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="60dp"
+    android:layout_height="60dp"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@drawable/btnbackgroundwhite">
+
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/numeroelemento"
+        android:textSize="28sp"
+        android:textColor="#3f9dd9"
+        foo:customFont="Fonts/HelveticaNeueBold.ttf"
+        android:gravity="center|center_vertical" />
+
+</LinearLayout>

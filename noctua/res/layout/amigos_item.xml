@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/marcoazulblanco"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imagenamigo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:id="@+id/imagensoamigo"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/android" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="33dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+	<com.syp4.noctua.ui.NoctuaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombreamigo"
+                foo:customFont="Fonts/HelveticaNeueBold.ttf"
+                android:singleLine="true"
+        android:textColor="#3f9dd9"
+        android:layout_marginTop="10dp" />
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dispositivoamigo"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf"/>
+
+        <com.syp4.noctua.ui.NoctuaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amigo_estado"
+            foo:customFont="Fonts/HelveticaNeueLight.ttf"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="35dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:background="#403f9dd9">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amigo_chat"
+                android:src="@drawable/chat"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amigo_botonestado"
+                android:src="@drawable/meeting"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amigo_verofertas"
+                android:src="@drawable/ticketamigo"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

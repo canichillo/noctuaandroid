@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f9dd9"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+    <com.syp4.noctua.utilidades.ScaleImageView
+        android:id="@+id/imagengaleriaempresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@null"
+        android:layout_margin="1dp" />
+
+    <com.syp4.noctua.ui.NoctuaTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textoimagengaleriaempresa"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        foo:customFont="Fonts/HelveticaNeueLight.ttf"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:padding="3dp" />
+</LinearLayout>
